@@ -2,9 +2,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 ![made-with-node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![made-with-react](https://img.shields.io/badge/-ReactJs-61DAFB?style=for-the-badge&logo=react&logoColor=FFFFFF) 
-![GitHub repo size](https://img.shields.io/github/repo-size/StephaneLi/StephaneLieumont_14_03062022)
-![GitHub jest](https://img.shields.io/badge/coverage-85%25-yellow)  
-
 
 # Getting Started with Create React App
 

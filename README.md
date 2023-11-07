@@ -1,6 +1,8 @@
 # HRnet 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
+[![forthebadge](https://forthebadge.com/images/featured/featured-uses-badges.svg)](https://forthebadge.com)
+
 ![made-with-node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![made-with-react](https://img.shields.io/badge/-ReactJs-61DAFB?style=for-the-badge&logo=react&logoColor=FFFFFF) 
 
 # Getting Started with Create React App

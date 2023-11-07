@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  background-color: #4ce0b3;
+  
+}
+

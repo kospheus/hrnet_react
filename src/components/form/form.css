@@ -1,0 +1,112 @@
+#create-employee {
+    width: fit-content;
+    padding: 88px 48px 24px 48px;
+    border-radius: 8px;
+    background-color: #00495f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0 32px 0;
+    position: relative;
+}
+
+.form-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 8px 8px 0 0;
+    background-color: #4ce0b3;
+}
+
+.title {
+    margin: 0px;
+}
+
+.labels {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.inputs {
+    padding-left: 16px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+    height: 46px;
+    width: 150px;
+    color: #3f3f46;
+    font-size: 1rem;
+}
+
+.calendar-inputs {
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+    height: 46px;
+    width: 150px;
+    color: #3f3f46;
+    font-size: 1rem;
+}
+
+.large-inputs {
+    padding-left: 16px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+    height: 46px;
+    width: 300px;
+    color: #3f3f46;
+    font-size: 1rem;
+}
+
+.address {
+    color: white;
+    margin: 12px 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 12px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-end: 12px;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: #4ce0b3;
+    border-image: none;
+    border-radius: 8px;
+}
+
+.p-button {
+    color: #00495f;
+    background: #4ce0b3;
+    border: #00495f;
+}
+
+.button {
+    background-color: #4ce0b3;
+    border-radius: 4px;
+    padding: 12px 28px;
+    border: none;
+    color: #00495f;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 12px 0 0 0;
+    cursor: pointer;
+  }
+
+.button:hover {
+    -webkit-box-shadow: 0px 0px 23px 6px rgba(0,73,95,0.1); 
+    box-shadow: 0px 0px 23px 6px rgba(0,73,95,0.1);
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }

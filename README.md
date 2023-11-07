@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![made-with-node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![made-with-react](https://img.shields.io/badge/-ReactJs-61DAFB?style=for-the-badge&logo=react&logoColor=FFFFFF) 
 
-## Projet P14 d'openclassroom
+## Projet P14 d'openclassroom
 
 Ce projet est une application web interne, qui sert d'outil fait pour les ressources humaines afin de gérer une liste d'employés.
 

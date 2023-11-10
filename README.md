@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Ce projet est une application web interne, qui sert d'outil fait pour les ressources humaines afin de gérer une liste d'employés.
 
+## Prérequis
+
+Node JS version : 18.17.1
+
 ### Instructions
 
 1: Cloner ce repo en local

@@ -13,9 +13,9 @@ Node JS version : 18.17.1
 
 ### Instructions
 
-1: Cloner ce repo en local <br>
-2: Ouvrez un terminal dans le dossier cloné <br>
-3: Entrer la commande suivante : 
+1. Cloner ce repo en local <br>
+2. Ouvrez un terminal dans le dossier cloné <br>
+3. Entrer la commande suivante : 
 
 Sur npm:
 ```bash
@@ -33,7 +33,7 @@ yarn install
 # Ouvrir un serveur dev local
 yarn start
 ```
-4.Installer primereact :
+4. Installer primereact :
 ```bash
 // with npm
 npm install primereact

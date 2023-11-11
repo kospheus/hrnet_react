@@ -33,8 +33,14 @@ yarn install
 # Ouvrir un serveur dev local
 yarn start
 ```
+Installer primereact :
+```bash
+// with npm
+npm install primereact
 
-
+// with yarn
+yarn add primereact
+```
 
 ## Available Scripts
 

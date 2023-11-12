@@ -1,6 +1,46 @@
-# Getting Started with Create React App
+# HRnet 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![made-with-node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![made-with-react](https://img.shields.io/badge/-ReactJs-61DAFB?style=for-the-badge&logo=react&logoColor=FFFFFF) 
+
+## Projet P14 d'openclassroom
+
+Ce projet est une application web interne, qui sert d'outil fait pour les ressources humaines afin de gérer une liste d'employés.
+
+## Prérequis
+
+Node JS version : 18.17.1
+
+### Instructions
+
+1. Cloner ce repo en local <br>
+2. Ouvrez un terminal dans le dossier cloné <br>
+3. Entrer la commande suivante : 
+
+Sur npm:
+```bash
+# Installer les dépendances
+npm install
+
+# Ouvrir un serveur dev local
+npm run start
+```
+Sur yarn :
+```bash
+# Installer les dépendances
+yarn install
+
+# Ouvrir un serveur dev local
+yarn start
+```
+4. Installer primereact :
+```bash
+// with npm
+npm install primereact
+
+// with yarn
+yarn add primereact
+```
 
 ## Available Scripts
 
@@ -39,33 +79,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# hrnet_react

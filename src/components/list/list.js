@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { FilterMatchMode } from 'primereact/api';
@@ -7,17 +8,13 @@ import './list.css';
 
 function List() {
 
-    const [employee, setEmployee] = useState([]);
+    const employee = useSelector(state => state.employees.employees);
+    console.log(employee);
 
-    useEffect(() => {
-        const storedData = localStorage.getItem('employeeList');
-        const employeeData = storedData ? JSON.parse(storedData) : [];
-        const nonEmptyEmployeeData = employeeData.filter(employee => employee && Object.keys(employee).length !== 0);
-        setEmployee(nonEmptyEmployeeData);
-    }, []);
-
+    //useState pour gérer la valeur du filtre global de recherche.
     const [globalFilterValue, setGlobalFilterValue] = useState('');
 
+    //useState pour gérer les filtres appliqués sur les données du tableau.
     const [filters, setFilters] = useState({
         global: { value: null, matchMode: FilterMatchMode.CONTAINS },
         name: { value: null, matchMode: FilterMatchMode.STARTS_WITH },
@@ -27,6 +24,12 @@ function List() {
         verified: { value: null, matchMode: FilterMatchMode.EQUALS }
     });
 
+    /**
+     * Gère les changements de la valeur du filtre global et met à jour l'état des filtres et la valeur du filtre global.
+     * Cette fonction est appelée lorsqu'un utilisateur tape dans un champ de recherche global pour filtrer les données du tableau.
+     *
+     * @param {Object} e - L'événement généré par l'interaction avec le champ de recherche global.
+     */
     const onGlobalFilterChange = (e) => {
         const value = e.target.value;
         let _filters = { ...filters };
@@ -37,10 +40,7 @@ function List() {
         setGlobalFilterValue(value);
     };
 
-    /**
-     * 
-     * @returns 
-     */
+    //Rendu de l'en-tête qui inclut un champ de recherche utilisant la fonction 'onGlobalFilterChange' pour mettre à jour les filtres.
     const renderHeader = () => {
         return (
             <div className="flex justify-content-end">
@@ -51,8 +51,6 @@ function List() {
             </div>
         );
     };
-
-    const header = renderHeader();
 
     return (
         <section className='list-container'>

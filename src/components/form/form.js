@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addEmployee } from '../../redux/actions/employeesActions';
 import { Calendar } from 'primereact/calendar';
 import { Dropdown } from 'primereact/dropdown';
 import { ModalToast } from '@kospheus/modal-toast';
@@ -8,13 +10,14 @@ import './form.css';
 
 function EmployeeForm() {
 
-    let storedData = localStorage.getItem('employeeList');
-    let employeeList = (storedData && storedData !== 'null' && storedData !== '') ? JSON.parse(storedData) : [];
+    const dispatch = useDispatch();
 
-    localStorage.setItem('employeeList', JSON.stringify(employeeList));
-
+    // Hook d'état pour contrôler la visibilité de la notification toast et du message d'erreur
     const [isToastVisible, setToastVisible] = useState(false);
+    const [isErrorVisible, setErrorVisible] = useState(false);
 
+    //Hook d'état pour gérer les données du formulaire d'employé
+    // Initialise tous les champs à des chaînes vides
     const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -27,30 +30,55 @@ function EmployeeForm() {
     department: '',
     });
 
+    /**
+     * Convertit une date au format ISO 8601 en une chaîne de caractères au format MM/DD/YYYY.
+     * 
+     * @param {string} isoDate - La date en format ISO 8601 à convertir.
+     * @returns {string} La date au format MM/DD/YYYY.
+     */
     function formatDateToMMDDYYYY(isoDate) {
         const date = new Date(isoDate);
-        const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Les mois sont de 0 à 11, donc on ajoute 1
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
         const day = date.getDate().toString().padStart(2, '0');
         const year = date.getFullYear();
         return `${month}/${day}/${year}`;
     }
 
-    // const [showToast, setShowToast] = useState(false);
 
+    /**
+     * Gère la sauvegarde des données d'employé depuis un formulaire dans la liste des employés et dans le stockage local.
+     * Récupère les valeurs des champs de saisie, les valide, puis met à jour l'état du composant et le stockage local.
+     * Réinitialise également les champs de saisie et affiche une notification.
+     * 
+     * @param {event} e - L'objet événement qui a déclenché la fonction.
+     */
     const handleSave = (e) => {
 
         e.preventDefault()
+         // Récupération des valeurs des champs du formulaire
         let inputFirstName = document.querySelector('#first-name').value;
         let inputLastName = document.querySelector('#last-name').value;
         let inputDateOfBirth = formatDateToMMDDYYYY(birthDate);
         let inputStartDate = formatDateToMMDDYYYY(startDate);
         let inputStreet = document.querySelector('#street').value;
         let inputCity = document.querySelector('#city').value;
-        let inputState = selectedState.name;
+        let inputState = selectedState ? selectedState.name : '';
         let inputZipCode = document.querySelector('#zip-code').value;
-        let inputDepartment = selectedDepartment.name;
+        let inputDepartment = selectedDepartment ? selectedDepartment.name : '';
 
-        // Vérifiez si tous les champs sont remplis
+        const newEmployee = {
+            firstName: inputFirstName,
+            lastName: inputLastName,
+            dateOfBirth: inputDateOfBirth,
+            startDate: inputStartDate,
+            street: inputStreet,
+            city: inputCity,
+            state: inputState,
+            zipCode: inputZipCode,
+            department: inputDepartment,
+        };
+
+        // Vérification que tous les champs sont remplis
         if (
             inputFirstName &&
             inputLastName &&
@@ -62,22 +90,13 @@ function EmployeeForm() {
             inputZipCode &&
             inputDepartment 
         ) {
-            setFormData((state) => {
-                state.firstName = inputFirstName;
-                state.lastName = inputLastName;
-                state.dateOfBirth = inputDateOfBirth;
-                state.startDate = inputStartDate;
-                state.street = inputStreet;
-                state.city = inputCity;
-                state.state = inputState;
-                state.zipCode = inputZipCode;
-                state.department = inputDepartment;
-                });
-            employeeList.push(formData);
-            localStorage.setItem('employeeList', JSON.stringify(employeeList));
-            setToastVisible(true);
-            console.log(employeeList);
+            console.log('Dispatching:', newEmployee);
+            dispatch(addEmployee(newEmployee));
 
+            // Affichage de la notification toast
+            setToastVisible(true);
+            setErrorVisible(false);
+            // Réinitialisation des données du formulaire et des états liés
             setFormData({
                 firstName: '',
                 lastName: '',
@@ -89,19 +108,21 @@ function EmployeeForm() {
                 zipCode: '',
                 department: '',
             });
+            // Réinitialisation des sélecteurs de date et des sélections de state et de departement
             setBirthDate(new Date());
             setStartDate(new Date());
             setSelectedState(null);
             setSelectedDepartment(null);
+        } else {
+            setErrorVisible(true);
         }
     };
 
-
-    // * pour les datepickers
+    // Crochets d'état pour les sélections de dates, initialisés à la date actuelle
     const [startDate, setStartDate] = useState(new Date());
     const [birthDate, setBirthDate] = useState(new Date());
 
-    // * pour le select State
+    // Crochet d'état pour l'état sélectionné avec la valeur par défaut null, et les options d'états correspondantes
     const [selectedState, setSelectedState] = useState(null)
     const states = [
     {
@@ -342,7 +363,7 @@ function EmployeeForm() {
     }
     ];
 
-    // * pour le select Department
+    // Crochet d'état pour le département sélectionné avec la valeur par défaut null, et les options de départements correspondantes
     const [selectedDepartment, setSelectedDepartment] = useState(null) 
     const departments = [
     {"name": "Sales"},
@@ -351,6 +372,7 @@ function EmployeeForm() {
     {"name": "Legal"},
     ]
 
+    // Objet de style pour les composants déroulants
     const dropdownStyle = {
         textAlign: 'left',
     }
@@ -430,10 +452,15 @@ function EmployeeForm() {
                 id='department'
                 className="large-inputs w-full md:w-14rem" />
             <button type="submit" className='button'>Save</button>
+            {isErrorVisible && <div className='error-modal'>
+            <p className='error-message'>Please fill out all fields in the form</p>
+            </div>}
         </form>
         {isToastVisible && <ModalToast 
         message="Employee added successfully !" 
         isVisible={isToastVisible} 
+        backgroundColor='#199260'
+        timerColor='#7fca00'
         onClose={() => setToastVisible(false)} />}
     </>
   );

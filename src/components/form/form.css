@@ -110,3 +110,15 @@
     box-shadow: none;
     transform: translateY(2px);
   }
+
+.error-modal{
+    margin-top: 12px;
+    border-radius: 4px;
+    background-color: #eb4034;
+}
+
+.error-message {
+    margin: 0px;
+    color: white;
+    padding: 8px 8px;
+}

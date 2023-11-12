@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hrnet_react/static/css/main.1a731b85.css",
-    "main.js": "/hrnet_react/static/js/main.8e212395.js",
+    "main.js": "/hrnet_react/static/js/main.6417ca32.js",
     "static/media/Inter-Bold.woff": "/hrnet_react/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
     "static/media/Inter-SemiBold.woff": "/hrnet_react/static/media/Inter-SemiBold.cca62d21c8c555c392e5.woff",
     "static/media/Inter-Medium.woff": "/hrnet_react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
@@ -14,10 +14,10 @@
     "static/media/Inter-Regular.woff2": "/hrnet_react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
     "index.html": "/hrnet_react/index.html",
     "main.1a731b85.css.map": "/hrnet_react/static/css/main.1a731b85.css.map",
-    "main.8e212395.js.map": "/hrnet_react/static/js/main.8e212395.js.map"
+    "main.6417ca32.js.map": "/hrnet_react/static/js/main.6417ca32.js.map"
   },
   "entrypoints": [
     "static/css/main.1a731b85.css",
-    "static/js/main.8e212395.js"
+    "static/js/main.6417ca32.js"
   ]
 }

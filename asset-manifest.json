@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hrnet_react/static/css/main.1a731b85.css",
+    "main.js": "/hrnet_react/static/js/main.8e212395.js",
+    "static/media/Inter-Bold.woff": "/hrnet_react/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
+    "static/media/Inter-SemiBold.woff": "/hrnet_react/static/media/Inter-SemiBold.cca62d21c8c555c392e5.woff",
+    "static/media/Inter-Medium.woff": "/hrnet_react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Light.woff": "/hrnet_react/static/media/Inter-Light.994e34451cc19ede31d3.woff",
+    "static/media/Inter-Regular.woff": "/hrnet_react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Bold.woff2": "/hrnet_react/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
+    "static/media/Inter-Medium.woff2": "/hrnet_react/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-SemiBold.woff2": "/hrnet_react/static/media/Inter-SemiBold.b5f0f109bc88052d4000.woff2",
+    "static/media/Inter-Light.woff2": "/hrnet_react/static/media/Inter-Light.2d5198822ab091ce4305.woff2",
+    "static/media/Inter-Regular.woff2": "/hrnet_react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "index.html": "/hrnet_react/index.html",
+    "main.1a731b85.css.map": "/hrnet_react/static/css/main.1a731b85.css.map",
+    "main.8e212395.js.map": "/hrnet_react/static/js/main.8e212395.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a731b85.css",
+    "static/js/main.8e212395.js"
+  ]
+}

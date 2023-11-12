@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <EmployeeList />
   },
 ], {
-  basename: process.env.PUBLIC_URL,
+  basename: "/hrnet_react",
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

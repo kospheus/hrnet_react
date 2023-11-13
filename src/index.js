@@ -21,7 +21,7 @@ const router = createHashRouter([
     element: <EmployeeList />
   },
 ], {
-  basename: '/hrnet_react'
+  basename: "/hrnet_react",
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

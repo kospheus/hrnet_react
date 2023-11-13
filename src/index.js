@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import { Provider } from 'react-redux';
@@ -11,7 +11,7 @@ import './index.css';
 import Home from './pages/home/home';
 import EmployeeList from './pages/employee-list/employee-page';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />
@@ -20,9 +20,7 @@ const router = createBrowserRouter([
     path: "/employee-list",
     element: <EmployeeList />
   },
-], {
-  basename: "/hrnet_react",
-});
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

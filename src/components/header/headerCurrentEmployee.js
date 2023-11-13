@@ -9,7 +9,7 @@ function HeaderCurrentEmployee() {
       </div>
       <nav className="nav">
         <ul>
-          <li><a className='nav-item' href="/">Home</a></li>
+          <li><a className='nav-item' href="#/">Home</a></li>
         </ul>
       </nav>
     </header>

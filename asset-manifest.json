@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/hrnet_react/static/css/main.a6d91235.css",
-    "main.js": "/hrnet_react/static/js/main.d0485dae.js",
-    "static/css/513.c324ef34.chunk.css": "/hrnet_react/static/css/513.c324ef34.chunk.css",
+    "main.css": "/hrnet_react/static/css/main.511d50f7.css",
+    "main.js": "/hrnet_react/static/js/main.a54cdaf5.js",
+    "static/css/513.c5090682.chunk.css": "/hrnet_react/static/css/513.c5090682.chunk.css",
     "static/js/513.bf561c07.chunk.js": "/hrnet_react/static/js/513.bf561c07.chunk.js",
+    "static/css/471.d27a836b.chunk.css": "/hrnet_react/static/css/471.d27a836b.chunk.css",
+    "static/js/471.7cb33375.chunk.js": "/hrnet_react/static/js/471.7cb33375.chunk.js",
+    "static/js/547.e7979272.chunk.js": "/hrnet_react/static/js/547.e7979272.chunk.js",
+    "static/js/478.74265ced.chunk.js": "/hrnet_react/static/js/478.74265ced.chunk.js",
     "static/css/515.dd59abef.chunk.css": "/hrnet_react/static/css/515.dd59abef.chunk.css",
     "static/js/515.a3a5c69c.chunk.js": "/hrnet_react/static/js/515.a3a5c69c.chunk.js",
     "static/media/Inter-Bold.woff": "/hrnet_react/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
@@ -17,15 +21,19 @@
     "static/media/Inter-Light.woff2": "/hrnet_react/static/media/Inter-Light.2d5198822ab091ce4305.woff2",
     "static/media/Inter-Regular.woff2": "/hrnet_react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
     "index.html": "/hrnet_react/index.html",
-    "main.a6d91235.css.map": "/hrnet_react/static/css/main.a6d91235.css.map",
-    "main.d0485dae.js.map": "/hrnet_react/static/js/main.d0485dae.js.map",
-    "513.c324ef34.chunk.css.map": "/hrnet_react/static/css/513.c324ef34.chunk.css.map",
+    "main.511d50f7.css.map": "/hrnet_react/static/css/main.511d50f7.css.map",
+    "main.a54cdaf5.js.map": "/hrnet_react/static/js/main.a54cdaf5.js.map",
+    "513.c5090682.chunk.css.map": "/hrnet_react/static/css/513.c5090682.chunk.css.map",
     "513.bf561c07.chunk.js.map": "/hrnet_react/static/js/513.bf561c07.chunk.js.map",
+    "471.d27a836b.chunk.css.map": "/hrnet_react/static/css/471.d27a836b.chunk.css.map",
+    "471.7cb33375.chunk.js.map": "/hrnet_react/static/js/471.7cb33375.chunk.js.map",
+    "547.e7979272.chunk.js.map": "/hrnet_react/static/js/547.e7979272.chunk.js.map",
+    "478.74265ced.chunk.js.map": "/hrnet_react/static/js/478.74265ced.chunk.js.map",
     "515.dd59abef.chunk.css.map": "/hrnet_react/static/css/515.dd59abef.chunk.css.map",
     "515.a3a5c69c.chunk.js.map": "/hrnet_react/static/js/515.a3a5c69c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6d91235.css",
-    "static/js/main.d0485dae.js"
+    "static/css/main.511d50f7.css",
+    "static/js/main.a54cdaf5.js"
   ]
 }

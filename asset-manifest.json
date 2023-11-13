@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hrnet_react/static/css/main.1a731b85.css",
-    "main.js": "/hrnet_react/static/js/main.6417ca32.js",
+    "main.css": "/hrnet_react/static/css/main.ac75f00d.css",
+    "main.js": "/hrnet_react/static/js/main.7b703fe5.js",
     "static/media/Inter-Bold.woff": "/hrnet_react/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
     "static/media/Inter-SemiBold.woff": "/hrnet_react/static/media/Inter-SemiBold.cca62d21c8c555c392e5.woff",
     "static/media/Inter-Medium.woff": "/hrnet_react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
@@ -13,11 +13,11 @@
     "static/media/Inter-Light.woff2": "/hrnet_react/static/media/Inter-Light.2d5198822ab091ce4305.woff2",
     "static/media/Inter-Regular.woff2": "/hrnet_react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
     "index.html": "/hrnet_react/index.html",
-    "main.1a731b85.css.map": "/hrnet_react/static/css/main.1a731b85.css.map",
-    "main.6417ca32.js.map": "/hrnet_react/static/js/main.6417ca32.js.map"
+    "main.ac75f00d.css.map": "/hrnet_react/static/css/main.ac75f00d.css.map",
+    "main.7b703fe5.js.map": "/hrnet_react/static/js/main.7b703fe5.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a731b85.css",
-    "static/js/main.6417ca32.js"
+    "static/css/main.ac75f00d.css",
+    "static/js/main.7b703fe5.js"
   ]
 }

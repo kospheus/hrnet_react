@@ -1,13 +1,17 @@
+import { lazy, Suspense } from 'react';
 import './home.css';
 import Header from '../../components/header/header';
-import EmployeeForm from '../../components/form/form';
+
+const LazyForm = lazy(() => import('../../components/form/form'));
 
 function Home() {
   return (
     <div className="App">
       <Header />
       <div className="container">
-        <EmployeeForm />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyForm />
+        </Suspense>
       </div>
     </div>
   );
